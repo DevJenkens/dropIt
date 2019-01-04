@@ -143,7 +143,7 @@ function setPage(scene){
             //Draw UI
             drawTitle("DROP IT");
             drawTitle("Scan the QR code below on your phone to get started",height*0.4,0.25);
-            //image(img, 0, height/2, img.width/2, img.height/2); 
+            image(img, (width/2)-img.width/2, height*0.66, width/4, width/4); 
             break;
         case "desktopGame": 
             //Draw UI
