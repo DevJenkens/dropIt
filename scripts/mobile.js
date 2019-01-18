@@ -4,6 +4,11 @@ var engine, world, ground;
 //Initializing variables
 var gameManager;
 var btnMenu, btnsDrop, shapes, shapesInfo, canPlay, showWaiting, nextShape, score, btnSubmit, btnRestart, scene;
+//Before page load
+function preload(){
+    qr = loadImage("assets/QR.png");
+    font = loadFont('assets/commando.ttf');
+}
 //Page onload
 function setup(){
     //Singleton
@@ -35,6 +40,7 @@ function setup(){
 }
 //Called every frame
 function draw(){
+    textFont(font);
     //Draw Background
     background(0);
     setPage(scene);
